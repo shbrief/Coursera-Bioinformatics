@@ -7,3 +7,7 @@ def reverse_complement(seq):
     complement = [pair.get(base,base) for base in bases]
     reverse_complement = ''.join(complement)
     return reverse_complement 
+
+# from Biopython package
+from Bio.Seq import Seq
+reverse_complement = Seq(seq)

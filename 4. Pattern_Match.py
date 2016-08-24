@@ -11,3 +11,9 @@ def pattern_match(Pattern, Genome):
     return (" ".join(str(e) for e in count))
 
 print(pattern_match(Pattern,Genome))
+
+# Vibrio cholerae example in Septic
+import urllib
+seq = urllib.urlopen('https://stepik.org/media/attachments/lessons/3/Vibrio_cholerae.txt').read()   # len(seq) = 1108251
+pattern_match("CTTGATCAT", seq)
+

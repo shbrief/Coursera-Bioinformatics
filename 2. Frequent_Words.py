@@ -11,6 +11,6 @@ def FrequentWords(Text, k):
 	else:
 	    kmer_dict[Text[i:i+k]] = 1
     kmers = [item[0] for item in kmer_dict.items() if item[1] == max(kmer_dict.values())]
-    return(' '.join(kmers))
+    return (' '.join(kmers))
 
 print(FrequentWords(Text,k))

@@ -8,6 +8,7 @@ def reverse_complement(seq):
     reverse_complement = ''.join(complement)
     return reverse_complement 
 
-# from Biopython package
+# example if you use Biopython package
 from Bio.Seq import Seq
-reverse_complement = Seq(seq)
+seq = Seq("TCGGGCCC")
+print seq.reverse_complement()

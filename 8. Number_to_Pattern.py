@@ -15,3 +15,6 @@ def number_to_pattern(index, k):
     prefix_pattern = number_to_pattern(prefix_index, k-1)
     return "".join([prefix_pattern, symbol]) 
     
+
+# Sample Input: 45  4
+# Sample Output: AGTC

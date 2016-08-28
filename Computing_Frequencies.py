@@ -15,3 +15,8 @@ def computing_frequencies(Text, k):
         j = pattern_to_number(pattern)
         frequency_array[j] = frequency_array[j] + 1
     return (" ".join(str(e) for e in frequency_array))
+
+
+# sample input/output
+# - sample input: ACGCGGCTCTGAAA    2
+# - sample output: 2 1 0 0 0 0 2 2 1 2 1 0 0 1 1 0

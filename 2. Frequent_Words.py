@@ -14,3 +14,8 @@ def frequent_words(Text, k):
     return (' '.join(kmers))
 
 print(frequent_words(Text,k))
+
+
+# sample input/output:
+# - sample input: ACGTTGCATGTCGCATGATGCATGAGAGCT   4
+# - sample output: CATG GCAT

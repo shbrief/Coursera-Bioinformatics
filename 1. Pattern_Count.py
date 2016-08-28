@@ -11,3 +11,8 @@ def pattern_count(Text, Pattern):
     return count
 
 print(pattern_count(Text,Pattern))
+
+
+# sample input/output:
+# - sample input: GCGCG    GCG
+# - sample putput: 2

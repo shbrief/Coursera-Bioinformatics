@@ -17,3 +17,7 @@ import urllib
 seq = urllib.urlopen('https://stepik.org/media/attachments/lessons/3/Vibrio_cholerae.txt').read()   # len(seq) = 1108251
 pattern_match("CTTGATCAT", seq)
 
+
+# sample input/output:
+# - sample input: ATAT  GATATATGCATATACTT
+# - sample output:  1 3 9

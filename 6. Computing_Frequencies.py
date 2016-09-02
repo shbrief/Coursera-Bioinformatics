@@ -7,9 +7,7 @@ def pattern_to_number(Pattern):
     return (4 * pattern_to_number(prefix) + nucleotide.get(symbol))
         
 def computing_frequencies(Text, k):
-    frequency_array = [None]*(4**k)
-    for i in range(4**k):
-        frequency_array[i] = 0
+    frequency_array = [0 for i in range(4**k)]
     for i in range(len(Text)-k+1):
         pattern = Text[i:i+k]
         j = pattern_to_number(pattern)
